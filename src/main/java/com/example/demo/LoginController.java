@@ -8,19 +8,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
 public class LoginController {
-
-    public Button returnButtonn;
     @FXML
     private Button loginButton;
-
     @FXML
     private Button signInButton;
-
+    @FXML
+    private CheckBox artisan;
+    @FXML
+    private CheckBox client;
     @FXML
     private void handleLogin(ActionEvent event) {
         loadScene(event, "/com/example/demo/login.fxml");
@@ -61,6 +62,4 @@ public class LoginController {
         alert.setContentText(content);
         alert.showAndWait();
     }
-
-
 }

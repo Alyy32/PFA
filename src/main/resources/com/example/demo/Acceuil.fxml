@@ -7,40 +7,53 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="522.0" prefWidth="422.0" spacing="20.0" style="-fx-padding: 20; -fx-background-color: #ede8e8; -fx-border-radius: 15; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoginController"> <!-- Specify the controller here -->
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="640.0" spacing="20.0"
+      style="-fx-padding: 20; -fx-background-color: #f5f5f5; -fx-border-radius: 15; -fx-background-radius: 15;"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo.LoginController">
     <!-- Title -->
-    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #636B2F;" text="Welcome!" VBox.vgrow="NEVER">
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2e3b4e;" text="Welcome!"
+           VBox.vgrow="NEVER">
         <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold" size="24.0"/>
         </font>
     </Label>
 
     <!-- Subtitle -->
-    <Label style="-fx-font-size: 16px; -fx-text-fill: #555555;" text="Please log in or sign in to continue." VBox.vgrow="NEVER">
+    <Label style="-fx-font-size: 16px; -fx-text-fill: #7a7a7a;" text="Please log in or sign in to continue."
+           VBox.vgrow="NEVER">
         <font>
-            <Font size="16.0" />
+            <Font size="16.0"/>
         </font>
     </Label>
 
     <!-- Buttons Container -->
-    <AnchorPane prefHeight="342.0" prefWidth="330.0" style="-fx-padding: 20; -fx-background-color: #ffffff; -fx-border-radius: 15; -fx-background-radius: 15;" VBox.vgrow="ALWAYS">
+    <AnchorPane prefHeight="200.0" prefWidth="300.0"
+                style="-fx-padding: 20; -fx-background-color: #ffffff; -fx-border-radius: 15; -fx-background-radius: 15;"
+                VBox.vgrow="ALWAYS">
         <!-- Login Button -->
-        <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="40.0" prefWidth="260.0" style="-fx-background-radius: 15; -fx-background-color: #636B2F; -fx-border-radius: 15; -fx-padding: 10 20; -fx-text-fill: white;" text="Login" textOverrun="WORD_ELLIPSIS">
+        <Button id="loginButton" fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0"
+                layoutY="20.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="40.0" prefWidth="260.0"
+                style="-fx-background-radius: 15; -fx-background-color: #4e6e8c; -fx-border-radius: 15; -fx-padding: 10 20; -fx-text-fill: white;"
+                text="Login" textOverrun="WORD_ELLIPSIS">
             <effect>
-                <Reflection />
+                <Reflection/>
             </effect>
             <font>
-                <Font name="System Bold" size="14.0" />
+                <Font name="System Bold" size="14.0"/>
             </font>
         </Button>
 
         <!-- Sign In Button -->
-        <Button fx:id="signInButton" alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="244.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="40.0" prefWidth="260.0" style="-fx-background-radius: 15; -fx-background-color: #636B2F; -fx-border-radius: 15; -fx-padding: 10 20; -fx-text-fill: white;" text="Sign in" textOverrun="WORD_ELLIPSIS">
+        <Button id="signInButton" fx:id="signInButton" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0"
+                layoutY="90.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="40.0" prefWidth="260.0"
+                style="-fx-background-radius: 15; -fx-background-color: #4e6e8c; -fx-border-radius: 15; -fx-padding: 10 20; -fx-text-fill: white;"
+                text="Sign in" textOverrun="WORD_ELLIPSIS">
             <effect>
-                <Reflection />
+                <Reflection/>
             </effect>
             <font>
-                <Font name="System Bold" size="14.0" />
+                <Font name="System Bold" size="14.0"/>
             </font>
         </Button>
     </AnchorPane>
